@@ -10,6 +10,29 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Add your custom CSS if needed -->
+    <style>
+           video {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .video-container .hide-controls {
+      display: none;
+    }
+    </style>
 </head>
 <body>
 
@@ -95,7 +118,7 @@
     </div>
 </nav>
 <!-- video section -->
-<section>
+<!-- <section>
     <div class="container-fluid px-0">
         <div class="embed-responsive embed-responsive-16by9">
             <video class="embed-responsive-item" controls>
@@ -105,16 +128,25 @@
         </div>
     </div>
     
-</section>
+</section> -->
+<div class="container-fluid px-0">
+    <div class="embed-responsive embed-responsive-16by9">
+      <video autoplay loop muted class="hide-controls">
+        <source src="./Video/newvideo.mp4" type="video/mp4">
+      
+      </video>
+    </div>
+  </div>
+
 <!-- Background Image -->
 <!--fact about planets -->
-<div class="container-fluid" style="background-image: url('img/backgroundimage.jpg'); background-size: cover; background-position: center;">
+<div class="container-fluid" style="background-image: url('img/l1.jpg'); background-size: cover; background-position: center;">
     <div class="fir">
         <div>
-            <img src="img/r1.jpg" width="300px">
+            <img src="img/bl2.jpg" height="400px" width="300px">
         </div>
         <div>
-            <p class="p1"> <i>I am not surprised, because I knew deep inside that ISRO will make it this time. I am already a proud Indian and I have become a prouder Indian now “I knew ISRO would iron out all the challenges faced by Chandrayaan-2 and would make this mission a success. I think I was born a little early because I’m already 75 and the remarkable era of space exploration programs begins now but as an Indian, I join my hands and congratulate ISRO for the great success</i></p>
+            <p class="p1"> <i>I am not surprised, because I knew deep inside that BharatSpace will make it this time. I am already a proud Indian and I have become a prouder Indian now “I knew BharatSpace would iron out all the challenges faced by Chandrayaan-2 and would make this mission a success. I think I was born a little early because I’m already 75 and the remarkable era of space exploration programs begins now but as an Indian, I join my hands and congratulate BharatSpace for the great success</i></p>
             <p class="p2"><i>-Rakesh Sharma</i></p>
         </div>
         
@@ -247,6 +279,17 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.querySelector('video');
+      video.addEventListener('loadedmetadata', function () {
+        video.controls = false; // Hide video controls
+        video.addEventListener('ended', function () {
+          video.play(); // Loop the video
+        });
+      });
+    });
+  </script>
 <script>
     function toggleForm() {
         var loginForm = document.getElementById("login-form");
