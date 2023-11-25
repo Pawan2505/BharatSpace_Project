@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Space Company - Scientist Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Add your custom CSS if needed -->
+    <style>
+      
+        body {
+            color: #fff;
+            background-image: url('img/backgroundimage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 0;
+    
+          }
+
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .btn-space {
+            margin-top: 20px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-link {
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+
+        .signup-form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="./Image/logo.jpg" alt="" height="50" width="50">
+            <a class="navbar-brand ml-3" href="#">BharatSpace</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Our Solar System
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sun</a></li>
+                            <li><a class="dropdown-item" href="#">Kuiper Belt</a></li>
+                            <li><a class="dropdown-item" href="#">Oort Cloud</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Beyond Our Solar System</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Planets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Planets</a></li>
+                            <li><a class="dropdown-item" href="#">Mercury</a></li>
+                            <li><a class="dropdown-item" href="#">Venus</a></li>
+                            <li><a class="dropdown-item" href="#">Earth</a></li>
+                            <li><a class="dropdown-item" href="#">Mars</a></li>
+                            <li><a class="dropdown-item" href="#">Jupiter</a></li>
+                            <li><a class="dropdown-item" href="#">Saturn</a></li>
+                            <li><a class="dropdown-item" href="#">Uranus</a></li>
+                            <li><a class="dropdown-item" href="#">Neptune</a></li>
+                            <li><a class="dropdown-item" href="#">Pluto and Dwarf Planets</a></li>
+                            <li><a class="dropdown-item" href="#">About Planets</a></li>
+                            <li><a class="dropdown-item" href="#">Hypothetical Planet X</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Planetry Analogs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Asteroids and Comets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Asteroids, Comets and Meteors</a></li>
+                            <li><a class="dropdown-item" href="#">Asteroids</a></li>
+                            <li><a class="dropdown-item" href="#">Comets</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Meteors and Meteorites</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Skywatching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Eclipses</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Solar System Multimedia
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Images, Activities and More</a></li>
+                            <li><a class="dropdown-item" href="#">Raw Images FAQ</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">All Solar Multimedia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        
+            </div>
+        </div>
+    </nav>
+<!-- Login Form Section -->
+<div class="container-fluid" style="background-image: url('img/backgroundimage.jpg'); background-size: cover; background-position: center;">
+    <div class="container form-container">
+        <h2 class="form-header">Signup/Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="loginEmail">Email address</label>
+                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-space">Login</button>
+            <p class="mt-3">Don't have an account? <span class="signup-link" onclick="toggleForm()">Sign up</span></p>
+        </form>
+    
+        <!-- Signup Form Section -->
+        <form id="signup-form" class="signup-form">
+            <!-- <h2 class="form-header">Scientist Signup</h2> -->
+            <div class="form-group">
+                <label for="signupName">Full Name</label>
+                <input type="text" class="form-control" id="signupName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email address</label>
+                <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-success btn-block btn-space">Signup</button>
+            <p class="mt-3">Already have an account? <span class="signup-link" onclick="toggleForm()">Login</span></p>
+        </form>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS and other scripts if needed -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function toggleForm() {
+        var loginForm = document.getElementById("login-form");
+        var signupForm = document.getElementById("signup-form");
+
+        if (loginForm.style.display === "none") {
+            loginForm.style.display = "block";
+            signupForm.style.display = "none";
+        } else {
+            loginForm.style.display = "none";
+            signupForm.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

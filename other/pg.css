@@ -1,0 +1,62 @@
+
+.cddiv{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    /* background-color: rgb(11, 11, 11); */
+}
+.card{
+    margin: 20px;
+    width: 30px;
+}
+.btn{
+    align-tracks: center;
+}
+h5{
+   text-align: center; 
+   font-size: 30px;
+}
+.cdiv{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    /* background-color: rgb(11, 11, 11); */
+
+}
+.cdiv1{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-bottom: 50px;
+    /* background-color: rgb(11, 11, 11); */
+
+}
+.fir{
+    /* background-color:rgb(11, 11, 11) ; */
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  color: white;
+  font-size: 30px;
+  padding-bottom: -50px;
+
+}
+.p1{
+   
+    /* margin-top: 200px; */
+    padding-left: 30px;
+}
+.p2{
+    
+    padding-left: 500px;
+    /* margin: 30px; */
+}
+h1{
+    /* background-color: black; */
+    /* text-decoration: blue; */
+    color: rgb(0,181,226);
+    margin-bottom:  0px;
+   display: flex;
+   justify-content: center;
+}   
